@@ -1,0 +1,148 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>:200 Result</title>
+    <link href="https://fonts.googleapis.com/css?family=Hind+Vadodara:400,700|Mukta:500,700" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+</head>
+<body class="is-boxed has-animations">
+    <div class="body-wrap boxed-container">
+        <header class="site-header">
+            <div class="container">
+                <div class="site-header-inner">
+                    <div class="brand header-brand">
+                        <h1 class="m-0">
+                            <a href="#">
+                                <svg width="48" height="32" viewBox="0 0 48 32" xmlns="http://www.w3.org/2000/svg">
+                                    <title>:200 Result</title>
+                                    <defs>
+                                        <linearGradient x1="0%" y1="100%" y2="0%" id="logo-a">
+                                            <stop stop-color="#007CFE" stop-opacity="0" offset="0%"/>
+                                            <stop stop-color="#007DFF" offset="100%"/>
+                                        </linearGradient>
+                                        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="logo-b">
+                                            <stop stop-color="#FF4F7A" stop-opacity="0" offset="0%"/>
+                                            <stop stop-color="#FF4F7A" offset="100%"/>
+                                        </linearGradient>
+                                    </defs>
+                                    <g fill="none" fill-rule="evenodd">
+                                        <rect fill="url(#logo-a)" width="32" height="32" rx="16"/>
+                                        <rect fill="url(#logo-b)" x="16" width="32" height="32" rx="16"/>
+                                    </g>
+                                </svg>
+                            </a>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            
+
+          
+            <section class="pricing section">
+                <div class="section-square"></div>
+                <div class="container">
+                    <div class="pricing-inner section-inner has-top-divider">
+                        <h2 class="section-title mt-0 text-center">Results of:  {{name}}</h2>
+                        <div class="pricing-tables-wrap">
+                            <div class="pricing-table">
+                                <div class="pricing-table-inner">
+                                    <div class="pricing-table-main">
+                                        <div class="pricing-table-header is-revealing">
+                                            <div class="pricing-table-title mt-12 mb-8">Sumary</div>
+                                            <div class="pricing-table-price mb-32 pb-24"><span class=" h4">@{{name}}</span></div>
+                                        </div>
+                                        <ul class="pricing-table-features list-reset text-xs mt-24 mb-56">
+                                            <li class="is-revealing">
+                                                <span class="list-icon">
+                                                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill="#5FFAD0" fill-rule="nonzero" d="M5.6 8.4L1.6 6 0 7.6 5.6 14 16 3.6 14.4 2z"/>
+                                                    </svg>
+                                                </span>
+                                                <span>Classifier Used: {{ algorithm }} </span>
+                                            </li>
+                                            <li class="is-revealing">
+                                                <span class="list-icon">
+                                                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill="#5FFAD0" fill-rule="nonzero" d="M5.6 8.4L1.6 6 0 7.6 5.6 14 16 3.6 14.4 2z"/>
+                                                    </svg>
+                                                </span>
+                                                <span>Number of tweets used: {{ tweets_num }} </span>
+                                            </li>
+                                            <li class="is-revealing">
+                                                <span class="list-icon">
+                                                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill="#5FFAD0" fill-rule="nonzero" d="M5.6 8.4L1.6 6 0 7.6 5.6 14 16 3.6 14.4 2z"/>
+                                                    </svg>
+                                                </span>
+                                                <span>Positive tweets num: {{ pos_tweets }}</span>
+                                            </li>
+                                            <li class="is-revealing">
+                                                <span class="list-icon">
+                                                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill="#5FFAD0" fill-rule="nonzero" d="M5.6 8.4L1.6 6 0 7.6 5.6 14 16 3.6 14.4 2z"/>
+                                                    </svg>
+                                                </span>
+                                                <span>Negative tweets num: {{ neg_tweets }} </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="pricing-table">
+                                <div class="pricing-table-inner">
+                                    <div class="pricing-table-main">
+                                        <div class="pricing-table-header is-revealing">
+                                            <div class="pricing-table-title mt-12 mb-8">Twitter Insigh 1</div>
+                                        </div>
+                                        <ul class="pricing-table-features list-reset text-xs mt-24 mb-56">
+                                            <li class="is-revealing">
+                                                <img src={{ url }} alt="Chart" height="1500" width="1500">
+                                            </li>
+                                            
+                                        </ul>
+                                    </div>
+                                    <div class="pricing-table-cta is-revealing">
+                                        <a class="button button-primary button-shadow button-block" href="#"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pricing-table">
+                                <div class="pricing-table-inner">
+                                    <div class="pricing-table-main">
+                                        <div class="pricing-table-header is-revealing">
+                                            <div class="pricing-table-title mt-12 mb-8">Tweets retrieved</div>
+                                        </div>
+                                          
+                                            {% for table in tables %}
+                                                <span class="pricing-table-features list-reset text-xs mt-24 mb-56">{{ table|safe }} </span>
+                                        
+                                            {% endfor %}
+                                    </div>
+                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+        </main>
+
+    </div>
+
+    <script src="{{ url_for('static', filename='js/main.min.js') }}"></script>
+</body>
+</html>
+                                          
