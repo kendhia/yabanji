@@ -33,8 +33,8 @@ linkedin_username = ""
 linkedin_password = ""
 global facebook_username
 global facebook_password
-facebook_username = "diaatemp@gmail.com"
-facebook_password = "d1a1sthebest"
+facebook_username = "dm"
+facebook_password = "45"
 global twitter_username
 global twitter_password
 twitter_username = "diaatemp@gmail.com"
